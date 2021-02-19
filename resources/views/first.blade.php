@@ -10,7 +10,7 @@
 <table style="width:100%">
   <tr>
     <th>Name:</th>
-    <td>Sungat Satemirov</td>
+    <td>Sungat</td>
   </tr>
   <tr>
     <th>Education:</th>
