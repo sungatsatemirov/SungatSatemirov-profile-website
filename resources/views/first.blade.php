@@ -21,6 +21,10 @@
     <td>87089406455</td>
   </tr>
   <tr>
+    <th>Location:</th>
+    <td>Silicon Valley</td>
+  </tr>
+  <tr>
     <th>Experience:</th>
     <td>DAR TECH , KASPI LAB , Yandex Academy , in future google or maybe facebook</td>
   </tr>
