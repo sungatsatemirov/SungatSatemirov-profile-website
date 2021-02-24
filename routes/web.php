@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB ;
 
+use App\Models\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,5 +24,19 @@ Route::get('/projects', function () {
 Route::get('/contacts', function () {
     return view('third');
 })->name('thirdPage');
+Route::get('/post/create' , function(){
+    DB::table('posts')->insert([
+        'title' => 'NewPost' ,
+        'body' => 'You must ensure that all work completed for this course is your
+        own work. Any evidence of plagiarism, data falsification,
+        fabrication, collusion, self-plagiarism, and/or other forms of
+        academic misconduct will be penalized.'
 
+    ]);
+});
+Route::get('/post' , function(){
+    $post = Post::find(2);
+
+    return $post ;
+});
 

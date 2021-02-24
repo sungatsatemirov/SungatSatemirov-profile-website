@@ -18,7 +18,7 @@ class Post extends Migration
             $table->id();
             $table->string('title');
             $table->longText('body');
-            $table->timestamp();
+            $table->timestamp('created_at')->useCurrent();
         });
     }
 
