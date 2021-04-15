@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,16 +6,18 @@
 <script src="{{ asset('script.js') }}"></script>
 </head>
 <body onload="load()" >
-<h1 onmouseover="bigger(this)" onmouseout="smaller(this)">Sungat Satemirov</h1>
+<h1 onmouseover="bigger(this)" onmouseout="smaller(this)">@lang('lang.name')</h1>
+
+<h3>@lang('lang.about')</h3>
 <div class = "generalInfo">
 <table style="width:100%">
   <tr>
     <th>Name:</th>
-    <td>Sungat Satemirov</td>
+    <td>@lang('lang.name')</td>
   </tr>
   <tr>
     <th>Education:</th>
-    <td>KTL . SDU</td>
+    <td>@lang('lang.education')</td>
   </tr>
   <tr>
     <th>Phone Number:</th>

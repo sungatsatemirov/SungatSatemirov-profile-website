@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Models\UserInformation;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\LocalizatioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +19,13 @@ use App\Http\Controllers\MailController;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
+//     return view('first');
+// })->name('firstPage');
+Route::get('/main/{lang}', function ($lang) {
+    App::setlocale($lang);
     return view('first');
-})->name('firstPage');
+}) ->name('firstPage');
 Route::get('/projects', function () {
     return view('second');
 })->name('secondPage');
